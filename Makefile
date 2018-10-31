@@ -12,3 +12,4 @@ all:
 	python fizzbuzz.py
 	nodejs fizzbuzz.js
 	clisp fizzbuzz.lisp
+	octave fizzbuzz.m
