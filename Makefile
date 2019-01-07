@@ -5,7 +5,7 @@ all:
 	javac fizzbuzz.java && java fizzbuzz && rm fizzbuzz.class
 	scalac fizzbuzz.scala && scala -cp . FizzBuzz && rm FizzBuzz*.class
 	mono-csc fizzbuzz.cs && ./fizzbuzz.exe && rm fizzbuzz.exe
-	vfp2py fizzbuzz.prg a.py && python -c 'import sys;sys.dont_write_bytecode = True;import a;a._program_main()' && rm a.py
+	vfp2py fizzbuzz.prg a.py && python -c 'import sys;sys.dont_write_bytecode = True;import a;a.MAIN()' && rm a.py
 	clojure fizzbuzz.clj
 	go run fizzbuzz.go
 	php fizzbuzz.php
@@ -14,4 +14,4 @@ all:
 	python fizzbuzz.py
 	nodejs fizzbuzz.js
 	clisp fizzbuzz.lisp
-	octave fizzbuzz.m
+	octave fizzbuzz.m 2> /dev/null
