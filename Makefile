@@ -16,3 +16,4 @@ all:
 	nodejs fizzbuzz.js
 	clisp fizzbuzz.lisp
 	octave fizzbuzz.m 2> /dev/null
+	cobc -x fizzbuzz.cob && ./fizzbuzz && rm ./fizzbuzz
