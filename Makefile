@@ -1,4 +1,5 @@
 all:
+	vbnc fizzbuzz.vb -out:./a.out > /dev/null && mono ./a.out && rm ./a.out
 	gcc fizzbuzz.c && ./a.out && rm ./a.out
 	g++ fizzbuzz.cpp && ./a.out && rm ./a.out
 	rustc -o a.out fizzbuzz.rs && ./a.out && rm ./a.out
