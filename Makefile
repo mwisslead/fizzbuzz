@@ -5,7 +5,7 @@ all:
 	rustc -o a.out fizzbuzz.rs && ./a.out && rm ./a.out
 	javac fizzbuzz.java && java fizzbuzz && rm fizzbuzz.class
 	scalac fizzbuzz.scala && scala -cp . FizzBuzz && rm FizzBuzz*.class
-	mono-csc fizzbuzz.cs && ./fizzbuzz.exe && rm fizzbuzz.exe
+	mono-csc fizzbuzz.cs && mono fizzbuzz.exe && rm fizzbuzz.exe
 	vfp2py fizzbuzz.prg a.py && python -c 'import sys;sys.dont_write_bytecode = True;import a;a.MAIN()' && rm a.py
 	clojure fizzbuzz.clj
 	go run fizzbuzz.go
